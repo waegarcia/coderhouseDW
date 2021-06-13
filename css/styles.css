@@ -1,0 +1,219 @@
+/* reseteador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header inicio */
+.header{
+    width: 100%;
+    background-color: white;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.header__searchbar{
+    height: 70px;
+
+    /* flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo{
+    height: 70px;
+    width: 80px;
+}
+
+.header__searcharea{
+    height: 30px;
+}
+
+.header__searchinput{
+    height: 100%;
+    width: 300px;
+    border: black solid 2px;
+}
+
+.button {
+    height: 100%;
+    border: 2px solid black;
+    color: white;
+    background-color: #fd611a;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Electrolize', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button:hover{
+    transition: 1s;
+    font-size: 1rem;
+}
+
+.header__navbar{
+    height: 100px;
+    background: rgb(253,97,26);
+    background: linear-gradient(180deg, rgba(253,97,26,1) 0%, rgba(251,178,145,1) 100%);
+    font-weight: bold;
+    
+    /* flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header__navbar li{
+    list-style: none;
+}
+
+.header__navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.header__navbar--destacar a:hover{
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+}
+/* header fin */
+
+/* main inicio */
+.main{
+    background-color: white;
+    text-align: center;
+    font-family: 'Electrolize', sans-serif;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__texto{
+    color: #fd611a;
+}
+
+.main__nosotros{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 40px 60px;
+    grid-template-areas: ". tituloNosotros ."
+                         ". parrafoNosotros .";
+}
+
+#tituloNosotros { grid-area: tituloNosotros; }
+#parrafoNosotros { grid-area: parrafoNosotros; }
+
+.main__tablaPcArmada{
+    margin-top: 30px;
+    /* display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: ". main__tabla ."; */
+}
+
+.main__tabla {
+    border: 3px solid;
+    /* grid-area: main__tabla; */
+}
+
+.main__tablatitulo {
+    color: red;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.main__tabla--head th{
+    border: 2px solid;
+    color: orangered;
+}
+
+.main__tabla--data td{
+    border: 1px solid;
+    color: chocolate;
+}
+.main__tabla--data li{
+    list-style: none;
+}
+
+/* grid */
+#main__componentesPC{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: ". foto1 foto2 ."
+                         ". foto3 foto4 ."
+                         ". foto5 foto6 ."
+                         ". foto7 foto8 .";
+}
+
+/* grid */
+#img1 { grid-area: foto1; }
+#img2 { grid-area: foto2; }
+#img3 { grid-area: foto3; }
+#img4 { grid-area: foto4; }
+#img5 { grid-area: foto5; }
+#img6 { grid-area: foto6; }
+#img7 { grid-area: foto7; }
+#img8 { grid-area: foto8; }
+
+#main__componentesPC{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+#main__componentesPC img{
+    width: 300px;
+}
+
+.main__form{
+    margin-top: 20px;
+    width: 20%;
+    padding: 40px 0px;
+    border: solid 1px black;
+}
+
+#nombreUsuario:focus, #apellidoUsuario:focus, #emailUsuario:focus{
+    width: 210px;
+    height: 25px;
+    background-color: rgb(247, 223, 177);
+}
+/* main fin */
+
+/* footer inicio */
+.footer{
+    height: 100px;
+    background: rgb(253,97,26);
+    background: linear-gradient(0deg, rgba(253,97,26,1) 0%, rgba(251,178,145,1) 100%);
+    font-family: 'Electrolize', sans-serif;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__texto{
+    font-style: normal;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.footer__rrss{
+    /* flexbox */
+    gap: 7px;
+}
+
+.footer__rrss:hover {
+    transition: 3s;
+    font-size: 1.5rem;
+}
+/* footer fin */
