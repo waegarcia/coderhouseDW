@@ -8,32 +8,24 @@
 /* header inicio */
 .header{
     width: 100%;
-    background-color: white;
     font-family: 'Electrolize', sans-serif;
+    background: rgb(253,97,26);
+    background: linear-gradient(180deg, rgba(253,97,26,1) 0%, rgba(251,178,145,1) 100%);
+    font-weight: bold;
 }
 
-.header__searchbar{
-    height: 70px;
-
-    /* flexbox */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.header__navbar{
+    padding: 10px 0px;
 }
 
-.header__logo{
-    height: 70px;
-    width: 80px;
+/* piso la clase de bootstrap nav-link */
+.nav-link{
+    color: black;
 }
 
-.header__searcharea{
-    height: 30px;
-}
-
-.header__searchinput{
-    height: 100%;
-    width: 300px;
-    border: black solid 2px;
+.header__hover:hover{
+    color: white;
+    background-color: #fd611a;
 }
 
 .button {
@@ -52,36 +44,6 @@
     transition: 1s;
     font-size: 1rem;
 }
-
-.header__navbar{
-    padding-top: 15px;
-    background: rgb(253,97,26);
-    background: linear-gradient(180deg, rgba(253,97,26,1) 0%, rgba(251,178,145,1) 100%);
-    font-weight: bold;
-    
-    /* flexbox */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-.header__navbar li{
-    list-style: none;
-}
-
-.header__navbar a{
-    text-decoration: none;
-    color: black;
-}
-
-.header__navbar--destacar a:hover{
-    background-color: black;
-    font-weight: 500;
-    color: white;
-    padding: 1px;
-    text-decoration: none;
-}
 /* header fin */
 
 /* main inicio */
@@ -99,6 +61,10 @@
     color: #fd611a;
 }
 
+.main__titulo{
+    font-weight: bolder;
+}
+
 .main__nosotros{
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -112,14 +78,10 @@
 
 .main__tablaPcArmada{
     margin-top: 30px;
-    /* display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-areas: ". main__tabla ."; */
 }
 
 .main__tabla {
     border: 3px solid;
-    /* grid-area: main__tabla; */
 }
 
 .main__tablatitulo {
@@ -184,22 +146,11 @@
     height: 25px;
     background-color: rgb(247, 223, 177);
 }
-
-/* Bootstrap */
-.main__tarjetas{
-    margin: 30px 0px 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
 /* main fin */
 
 /* footer inicio */
 .footer{
-    height: 100px;
+    padding: 20px 0px 40px;
     background: rgb(253,97,26);
     background: linear-gradient(0deg, rgba(253,97,26,1) 0%, rgba(251,178,145,1) 100%);
     font-family: 'Electrolize', sans-serif;
