@@ -11,13 +11,14 @@
     <link rel="icon" href="../img/logos/compu-logo.png">
     <title>CONTACTO | CHMR-STORE®</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav nav-pills flex-column flex-sm-row header__navbar">
+        <nav class="nav nav-pills flex-column flex-sm-row header__navbar" data-aos="fade-down" data-aos-delay="300">
             <a class="flex-sm-fill text-sm-center nav-link header__hover" href="../index.html">HOME</a>
             <a class="flex-sm-fill text-sm-center nav-link header__hover" href="./nosotros.html">NOSOTROS</a>
             <a class="flex-sm-fill text-sm-center nav-link header__hover" href="./pcarmada.html">PC ARMADA</a>
@@ -59,13 +60,13 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.519049987925!2d-58.373044870258056!3d-34.60068583552471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc66f274ed%3A0x66ea6e648f46a49a!2zR2FsZXLDrWEgSmFyZMOtbg!5e0!3m2!1ses-419!2sar!4v1625969121542!5m2!1ses-419!2sar" width="500" height="300" style="margin:20px;border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         
-        <div class="main__wsp">
-            <a href="#"><img src="../img/logos/whatsappGreen.png" alt="whatsapp" width="100" height="100" class="wsp"></a>
+        <div class="main__wsp" data-aos="fade-up">
+            <a href="tel:+"><img src="../img/logos/whatsappGreen.png" alt="whatsapp" width="90" height="90" class="wsp"></a>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__rrss">
+        <div class="footer__rrss" data-aos="fade-up" data-aos-delay="500">
             <span class="footer__rrssTexto">Nuestras redes sociales:</span>
             <div class="footer__rrssImg">
                 <a href="https://es-la.facebook.com/" class="footer__img"><img src="../img/logos/facebook-logo.png" alt="Facebook"></a>
@@ -73,7 +74,7 @@
                 <a href="https://twitter.com/home?lang=es" class="footer__img"><img src="../img/logos/twitter_logo.png" alt="twitter"></a>
             </div>
         </div>
-        <div class="footer__legales">
+        <div class="footer__legales" data-aos="fade-up">
             <p>
                 <strong>Aceptación de los términos y condiciones de uso:</strong><br>
                 El uso del Sitio implica la declaración por parte del Usuario de que comprende, conoce y acepta los términos y condiciones que a continuación se detallan, y por ello se obliga expresamente a cumplir con los mismos. 
@@ -92,6 +93,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

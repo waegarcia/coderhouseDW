@@ -2,8 +2,7 @@
 
 ## Cotizador de Computadoras ya ensambladas y Componentes PC sueltos.
 
-
-- En el archivo index.html agregué las siguiente características sobre SEO:
+### En el archivo index.html agregué las siguiente características sobre SEO:
 
 * Descripción: A través de la etiqueta meta name description, incluí el párrafo “Tienda Informatica: Las mejores propuestas para hacer realidad tu PC GAMER”. Es básicamente la idea del sitio en si.
 
