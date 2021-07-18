@@ -1,0 +1,19 @@
+.header{
+    width: 100%;
+    font-family: $primary-font;
+    background: linear-gradient(180deg, $color-primario 0%, $color-secundario 100%);
+    font-weight: bold;
+    position: sticky;
+    z-index: 9999;
+    top: 0px;
+    .header__navbar{
+        padding: 10px 0px;
+        .nav-link{
+            color: $black;
+        }
+        .header__hover:hover{
+            color: $white;
+            background-color: $color-terciario;
+        }
+    }
+}

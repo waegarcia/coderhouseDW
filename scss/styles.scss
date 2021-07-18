@@ -1,0 +1,115 @@
+@import "reseteador";
+@import "variables";
+@import "header";
+@import "footer";
+@import "media";
+
+.main{
+    background-color: $white;
+    text-align: center;
+    font-family: $primary-font;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main__texto{
+        align-content: center;
+        color: $color-terciario;
+        .main__titulo{
+            font-weight: bolder;
+        }
+
+        // nosotros
+        .figure{
+            display: flex;
+            flex-direction: column;
+            .figure-caption{
+                font-family: $primary-font;
+                color: $orange-tres;
+            }
+        }
+    }
+
+    // pc armada
+    .main__pcArmada{
+        align-content: center;
+
+        .main__pcArmadaTitulo{
+            margin-bottom: 15px;
+            color: $orange-cuatro;
+            text-decoration: underline;
+        }
+
+        .main__pcArmadaImg{
+            margin: 40px 0px;
+            display: flex;
+            width: 100%;
+        }
+
+        .main__pcArmadaImgMarca:hover{
+            opacity: 0.5;
+        }
+
+        .main__pcArmadaImgSize{
+            padding: 15px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // componentes PC
+    .galeria{
+        padding: 50px;
+        max-width: 75%;
+        min-width: 350px;
+        .col{
+            .card{
+                padding: 15px;
+                .card-body{
+                    .card-title{
+                        font-family: $primary-font;
+                        color: $color-terciario;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    // contacto
+    .main__form{
+        margin: 40px 0px;
+        font-weight: bolder;
+        border: 1px solid $orange-cuatro;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: $orange-cero;
+        color: $black;
+        .form-control:focus {
+            border-color: $orange-tres;
+            box-shadow: 0 0 0 0.01rem $orange-tres;
+        }
+        .button {
+            height: 100%;
+            border: 2px solid $black;
+            color: $white;
+            background-color: $orange-tres;
+            text-align: center;
+            font-weight: bolder;
+            font-family: $primary-font;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+    }
+
+    .main__wsp{
+        width: 100%;
+        height: 100%;
+        text-align: right;
+        position: sticky;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+}
