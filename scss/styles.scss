@@ -36,15 +36,20 @@
         }
 
         // nosotros
-        .figure{
-            display: flex;
-            flex-direction: column;
-            .figure-caption{
-                font-family: $primary-font;
+        .main__nosotrosImgContainer{
+            margin: 10px 0px;
+            padding: 0px 10px;
+            width: 100%;
+            .main__nosotrosImg{
+                padding: 10px;
+                width: 100%;
+                height: auto;
+            }
+            .main__nosotrosImgTexto{
                 color: $orange-tres;
             }
         }
-        .main__link{
+        .main__nosotrosLink{
             color: $orange-cuatro;
         }
 
@@ -102,9 +107,9 @@
 
     // componentes
     .galeria{
-        padding: 50px;
+        padding: 30px;
         max-width: 75%;
-        min-width: 350px;
+        min-width: 320px;
         .col{
             .card{
                 padding: 15px;
