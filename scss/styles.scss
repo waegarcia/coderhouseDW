@@ -3,6 +3,7 @@
 @import "header";
 @import "footer";
 @import "media";
+@import "mixins";
 
 .main{
     background-color: $white;
@@ -21,6 +22,19 @@
             font-weight: bolder;
         }
 
+        .button {
+            height: 100%;
+            border: 2px solid $black;
+            border-radius: 3px;
+            color: $white;
+            background-color: $orange-tres;
+            text-align: center;
+            font-weight: bolder;
+            font-family: $primary-font;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+
         // nosotros
         .figure{
             display: flex;
@@ -30,9 +44,36 @@
                 color: $orange-tres;
             }
         }
+        .main__link{
+            color: $orange-cuatro;
+        }
+
+        // error
+        .main__error{
+            margin: 100px 0px 30px;
+            .main__errorTitulo{
+                font-size: 2.5rem;
+            }
+            .main__errorTitulo--subtitulo{
+                font-size: 1.5rem;
+                @extend .main__errorTitulo;
+            }
+            .main__errorButton{
+                margin: 35px 0px;
+                background-color: $orange-cuatro;
+                @extend .button;
+                .main__link{
+                    @include links($white);
+                }
+            }
+            .main__errorButton:hover{
+                transition: 0.5s;
+                background-color: $orange-dos;
+            }
+        }
     }
 
-    // pc armada
+    // setups
     .main__pcArmada{
         align-content: center;
 
@@ -59,7 +100,7 @@
         }
     }
 
-    // componentes PC
+    // componentes
     .galeria{
         padding: 50px;
         max-width: 75%;
@@ -91,19 +132,13 @@
             border-color: $orange-tres;
             box-shadow: 0 0 0 0.01rem $orange-tres;
         }
-        .button {
-            height: 100%;
-            border: 2px solid $black;
-            color: $white;
-            background-color: $orange-tres;
-            text-align: center;
-            font-weight: bolder;
-            font-family: $primary-font;
-            cursor: pointer;
-            padding: 5px 15px;
+        .button:hover{
+            transition: 0.5s;
+            background-color: $orange-dos;
         }
     }
 
+    // logo de whatsApp
     .main__wsp{
         width: 100%;
         height: 100%;

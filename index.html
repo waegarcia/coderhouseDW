@@ -14,19 +14,45 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav nav-pills flex-column flex-sm-row header__navbar" data-aos="fade-down" data-aos-delay="300">
-            <a class="flex-sm-fill text-sm-center nav-link header__hover" href="index.html">
-                <img src="./img/logos/compu-logo.png" alt="CHMR-logo" width="30" height="24" class="d-inline-block align-text-top">
-                HOME
-            </a>
-            <a class="flex-sm-fill text-sm-center nav-link header__hover" href="./pages/nosotros.html">NOSOTROS</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__hover" href="./pages/pcarmada.html">PC ARMADA</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__hover" href="./pages/componentes.html">COMPONENTES DE PC</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__hover" href="./pages/contacto.html">CONTACTO</a>
+        <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logos/compu-logo.png" alt="CHMR-logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span>CHMR-STORE</span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03" data-aos="fade-down" data-aos-delay="200">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active header__hover" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__hover" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__hover" href="./pages/pcarmada.html">SETUPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__hover" href="./pages/componentes.html">COMPONENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header__hover" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex header__navbarForm">
+                        <input class="form-control me-2 header__navbarForm__input" type="search" placeholder="Busqueda...">
+                        <button class="btn btn-outline-success header__navbarForm__button" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     
@@ -70,9 +96,9 @@
         <div class="footer__rrss" data-aos="fade-up" data-aos-delay="500">
             <span class="footer__rrssTexto">Nuestras redes sociales:</span>
             <div class="footer__rrssImg">
-                <a href="https://es-la.facebook.com/" class="footer__img"><img src="./img/logos/facebook-logo.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/?hl=es-la" class="footer__img"><img src="./img/logos/instagram-logo.png" alt="instagram"></a>
-                <a href="https://twitter.com/home?lang=es" class="footer__img"><img src="./img/logos/twitter_logo.png" alt="twitter"></a>
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook-square fa-2x main__link"></a>
+                <a href="https://www.instagram.com/?hl=es-la" class="fa fa-instagram fa-2x main__link"></a>
+                <a href="https://twitter.com/home?lang=es" class="fa fa-twitter-square fa-2x main__link"></a>
             </div>
         </div>
         <div class="footer__legales" data-aos="fade-up">

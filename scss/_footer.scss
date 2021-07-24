@@ -1,3 +1,5 @@
+@import "mixins";
+
 .footer{
     padding: 20px 10px 40px;
     background: linear-gradient(0deg, $color-primario 0%, $color-secundario 100%);
@@ -22,10 +24,9 @@
         }
         .footer__rrssImg{
             gap: 7px;
-        }
-        .footer__rrssImg:hover {
-            transition: 1s;
-            font-size: 2rem;
+            .main__link{
+                @include links($black);
+            }
         }
     }
     .footer__legales{
@@ -33,3 +34,4 @@
         padding: 0px 50px 0px;
     }
 }
+
