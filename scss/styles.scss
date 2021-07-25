@@ -70,10 +70,10 @@
                 .main__link{
                     @include links($white);
                 }
-            }
-            .main__errorButton:hover{
-                transition: 0.5s;
-                background-color: $orange-dos;
+                &:hover{
+                    transition: 0.5s;
+                    background-color: $black;
+                }
             }
         }
     }
@@ -94,8 +94,10 @@
             width: 100%;
         }
 
-        .main__pcArmadaImgMarca:hover{
-            opacity: 0.5;
+        .main__pcArmadaImgMarca{
+            &:hover{
+                opacity: 0.5;
+            }
         }
 
         .main__pcArmadaImgSize{
@@ -133,13 +135,18 @@
         padding: 10px;
         background-color: $orange-cero;
         color: $black;
-        .form-control:focus {
-            border-color: $orange-tres;
-            box-shadow: 0 0 0 0.01rem $orange-tres;
+        .form-control {
+            &:focus {
+                border-color: $orange-tres;
+                box-shadow: 0 0 0 0.01rem $orange-tres;
+            }
         }
-        .button:hover{
-            transition: 0.5s;
-            background-color: $orange-dos;
+        .form__button{
+            @extend .button;
+            &:hover{
+                transition: 0.5s;
+                background-color: $black;
+            }
         }
     }
 

@@ -10,25 +10,28 @@
         padding: 10px 0px;
         .nav-link{
             color: $black;
+            &:hover{
+                color: $white;
+                background-color: $color-terciario;
+            }
         }
-        .header__hover:hover{
-            color: $white;
-            background-color: $color-terciario;
-        }
+        
         .header__navbarForm{
-            .header__navbarForm__input:focus{
-                border-color: $red;
-                box-shadow: 0 0 0 0.01rem $red;
+            .header__navbarForm__input{
+                &:focus{
+                    border-color: $red;
+                    box-shadow: 0 0 0 0.01rem $red;
+                }
             }
             .header__navbarForm__button{
                 color: $white;
                 font-weight: bolder;
                 background-color: $orange-cuatro;
                 border-color: $black;
-            }
-            .header__navbarForm__button:hover{
-                transition: 0.5s;
-                background-color: $orange-dos;
+                &:hover{
+                    transition: 0.5s;
+                    background-color: $black;
+                }
             }
         }
     }
