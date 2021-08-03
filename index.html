@@ -26,7 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logos/compu-logo.png" alt="CHMR-logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="./img/logos/compu-logo.png" alt="logo CHMR" width="30" height="24" class="d-inline-block align-text-top">
                     <span>CHMR-STORE</span>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03" data-aos="fade-down" data-aos-delay="200">
@@ -59,36 +59,63 @@
     <main class="main">
         <div class="main__texto">
             <h1 class="main__titulo">CHMR-STORE</h1>
-            <h2>Bienvenido a nuestra pagina de inicio</h2>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <h2 id="main__subtitulo--index">Bienvenido a nuestra pagina de inicio</h2>
+
+            <!-- carousel desktop -->
+            <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/carousel/1.jpg" class="d-block w-100" alt="img1">
+                        <img src="./img/carousel/carousel-desktop-1.jpg" class="d-block w-100" alt="Imagen-carousel-desktop. Promo1: Mother Asrock B550.">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/carousel/2.jpg" class="d-block w-100" alt="img2">
+                        <img src="./img/carousel/carousel-desktop-2.jpg" class="d-block w-100" alt="Imagen-carousel-desktop. Promo2: Mother Asus Z590.">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/carousel/3.jpg" class="d-block w-100" alt="img3">
+                        <img src="./img/carousel/carousel-desktop-3.jpg" class="d-block w-100" alt="Imagen-carousel-desktop. Promo3: Gabinetes y fuentes Be Quiet.">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+            <!-- carousel mobile -->
+            <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/carousel/mobile/carousel-mobile-1.jpg" class="d-block w-100 carouselMobile__img" alt="Imagen-carousel-mobile. PC gamers armadas.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carousel/mobile/carousel-mobile-2.jpg" class="d-block w-100 carouselMobile__img" alt="Imagen-carousel-mobile. Armá tu PC.">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
-        <div class="main__wsp" data-aos="fade-left" data-aos-delay="500">
-            <a href="tel:+"><img src="./img/logos/whatsappGreen.png" alt="whatsapp" width="90" height="90" class="wsp"></a>
+        <div class="main__wsp" data-aos="fade-up">
+            <a href="tel:+"><img src="./img/logos/whatsappGreen.png" alt="logo whatsapp" width="90" height="90" class="wsp"></a>
         </div>
     </main>
 
