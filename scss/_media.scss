@@ -27,8 +27,14 @@
         display: none;
     }
 
-    .main__wsp,.main__componentesImg,#main__subtitulo--index,#carouselDesktop{
+    .main__wsp,.main__componentesImg{
         @include ocultar();
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #carouselDesktop{
+        display: none;
     }
 }
 
@@ -49,6 +55,9 @@
 }
 
 @media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 426px) {
     #carouselMobile{
         display: none;
     }
