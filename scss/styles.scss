@@ -60,12 +60,14 @@
 
         // error
         .main__error{
-            margin: 100px 0px 30px;
+            margin: 90px 0px 30px;
+            
             .main__errorTitulo{
-                font-size: 2.5rem;
+                padding: 0px 15px;
+                font-size: 2.1rem;
             }
             .main__errorTitulo--subtitulo{
-                font-size: 1.5rem;
+                font-size: 1.1rem;
                 @extend .main__errorTitulo;
             }
             .main__errorButton{
